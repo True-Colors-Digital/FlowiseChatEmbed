@@ -40,7 +40,7 @@ export const Badge = (props: Props) => {
 
   return (
     <>
-      <Show when={props.footer?.showFooter === undefined || props.footer?.showFooter === null || props.footer?.showFooter === true}>
+      {/* <Show when={props.footer?.showFooter === undefined || props.footer?.showFooter === null || props.footer?.showFooter === true}>
         <span
           class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[13px]"
           style={{
@@ -48,7 +48,7 @@ export const Badge = (props: Props) => {
             'background-color': props.badgeBackgroundColor ?? '#ffffff',
           }}
         >
-          {/* {props.footer?.text ?? 'Powered by'}
+          {props.footer?.text ?? 'Powered by'}
           <a
             ref={liteBadge}
             href={props.footer?.companyLink ?? 'https://flowiseai.com'}
@@ -59,7 +59,7 @@ export const Badge = (props: Props) => {
             style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}
           >
             <span>&nbsp;{props.footer?.company ?? 'Flowise'}</span>
-          </a> */}
+          </a>
         </span>
       </Show>
       <Show when={props.footer?.showFooter === false}>
@@ -70,7 +70,7 @@ export const Badge = (props: Props) => {
             'background-color': props.badgeBackgroundColor ?? '#ffffff',
           }}
         />
-      </Show>
+      </Show> */}
     </>
   );
 };
